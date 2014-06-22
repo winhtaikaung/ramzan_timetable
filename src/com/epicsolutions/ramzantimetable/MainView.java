@@ -5,6 +5,8 @@ import java.util.HashMap;
 
 
 
+
+
 import custom_controls.Custom_List_Adapter;
 import db_helper.dbhelp;
 
@@ -12,10 +14,12 @@ import entity.Rzn_model;
 
 
 import android.app.ListActivity;
+import android.content.Intent;
 import android.graphics.Typeface;
 import android.os.Bundle;
 import android.os.SystemClock;
 import android.view.Menu;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.ListView;
 import android.widget.TextView;
@@ -56,6 +60,24 @@ public class MainView extends ListActivity{
 			// Inflate the menu; this adds items to the action bar if it is present.
 			getMenuInflater().inflate(R.menu.main_view,menu);
 			return true;
+		}
+	 	
+	 	@Override
+		public boolean onOptionsItemSelected (MenuItem item){
+			switch(item.getItemId())
+			{
+			case R.id.about:
+				Intent intent=new Intent(getApplicationContext(),AboutView.class);
+				startActivity(intent);
+				return true;
+			case R.id.zakart:
+				return true;
+				
+			default:
+				return super.onOptionsItemSelected(item);			
+			}
+			
+			
 		}
 	 	
 	 	

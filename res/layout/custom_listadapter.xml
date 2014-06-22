@@ -27,12 +27,14 @@
     <TextView
         android:id="@+id/txt_G_date"
         android:layout_width="fill_parent"
-        android:layout_height="wrap_content" 
-        android:layout_marginLeft="20dp" 
+        android:layout_height="fill_parent" 
+        
         android:layout_weight="1"         
         android:text="Date"
         android:textSize="20dp"
-        android:textColor="#BD1212"
+        
+        android:textColor="#2149CE"
+        
         android:textAppearance="?android:attr/textAppearanceLarge" />
     
     </LinearLayout>
@@ -41,7 +43,7 @@
 			        android:layout_width="fill_parent"
 			        android:layout_height="wrap_content"			     
 			        android:orientation="horizontal" 
-			        android:layout_marginTop="20dp"
+			       
 			        
 			        
 			        >
@@ -50,8 +52,8 @@
 			        android:layout_width="wrap_content"
 			        android:layout_height="wrap_content"			       
 			       android:layout_weight="1"		
-			             
-			        android:textAppearance="?android:attr/textAppearanceSmall"
+			       android:padding="5dp"      
+			        android:textAppearance="?android:attr/textAppearanceMedium"
 			        android:text="ဝါခ်ည္ခ်ိန္"
 			        android:textColor="#FFF"
 			        android:background="#E11" 
@@ -68,8 +70,9 @@
 			        android:id="@+id/txt_desc_i"
 			        android:layout_width="wrap_content"
 			        android:layout_height="wrap_content"			       
-			       android:layout_weight="1"		        
-			        android:textAppearance="?android:attr/textAppearanceSmall"
+			       android:layout_weight="1"
+			       android:padding="5dp"		        
+			        android:textAppearance="?android:attr/textAppearanceMedium"
 			        android:text="ဝါေျဖခ်ိန္" 
 			        android:textColor="#FFF"
 			        android:background="#177700"
