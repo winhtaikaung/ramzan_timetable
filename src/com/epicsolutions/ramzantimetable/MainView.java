@@ -71,6 +71,8 @@ public class MainView extends ListActivity{
 				startActivity(intent);
 				return true;
 			case R.id.zakart:
+				Intent zakartintent=new Intent(getApplicationContext(),ZakartView.class);
+				startActivity(zakartintent);
 				return true;
 				
 			default:
